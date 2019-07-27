@@ -12,9 +12,46 @@
 
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
+    
+    <style>
+      .container {
+       
+        background-color: orange;
+        height: 900px;  
+        width: 400px;
+        margin-top: -45px;
+        margin-right: -2px;
+        margin-left: 58px;
+    
+      }
+      
+      #parent {
+        width: 103%;
+        background-color: purple;
+        display: flex;
+        flex-direction: row;
+        margin-top: -45px;
+        height: 900px;
+        
+      }
+      
+      body {
+        background-color: purple; 
+        padding: 0px; 
+        margin: 0px; 
+      }
+    
+    
+    </style>
+    
+    
 	</head>
 	<body>
 		<!-- Your layout here -->
-
+    <div id="parent">
+      <div class="container"></div>
+      <div class="container"></div>
+      <div class="container"></div>
+    </div>
 	</body>
 </html>

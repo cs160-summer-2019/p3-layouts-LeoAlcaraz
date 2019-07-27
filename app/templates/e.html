@@ -12,9 +12,54 @@
 
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
+    
+    <style>
+      .container {
+        background-color: orange; 
+        width: 200px;
+        height: 200px;
+        margin: 15px;
+      }
+      
+      .column{
+        display: flex; 
+        flex-direction: column;
+        margin-top: 28px;
+        margin-left: 20px;
+        
+      }
+      
+      #parent{
+        display: flex; 
+        flex-direction: row;
+        height: 800px; 
+        background-color: purple; 
+        margin-top: -9px;
+      }
+    
+    
+    </style>
+   
 	</head>
 	<body>
 		<!-- Your layout here -->
-
+    <div id="parent">
+      <div class="column">
+         <div class="container"></div>
+         <div class="container"></div>
+         <div class="container"></div>   
+      </div>
+      
+      <div class="column">
+         <div class="container"></div>
+         <div class="container"></div>
+         <div class="container"></div>   
+      </div>
+      <div class="column">
+         <div class="container"></div>
+      </div>
+      
+      
+    </div>
 	</body>
 </html>
